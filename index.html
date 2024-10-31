@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juma Muborak Birodarlar</title>
+    <style>
+        .invitation {
+            width: 100%;
+            margin: 20px auto;
+            padding: 17px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            text-align: center;
+            border: 2px solid #ccc;
+            max-width: 500px;
+            box-shadow: 0 0 15px aqua;
+            border-radius: 25px;
+            margin-top: 350px;
+        }
+        .map_button{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: aqua;
+            color: purple;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .map_button:hover{
+            background-color: springgreen;
+        }
+        body {
+            height: 100%; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;  
+            align-items: center;      
+            font-family: 'Arial', sans-serif; 
+            background: url('./8813.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .text {
+            color: #8a2be2;
+        }
+        .countdown {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            font-size: 1.6em;
+            color: purple;
+        }
+        .time {
+            background: aqua;  
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+        .time span {
+            display: block;
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <header>
+            <h1 class="text">Juma muborak bo'lsin</h1>
+            <p class="text">Assalomu alaykum birodarim sizni Juma ayyomingiz bilan tabriklayman.</p>
+        </header>
+        <section>
+            <p class="text"><strong>Жума намози бошланиш вакти:</strong> 1.11.2024</p>
+            <p class="text"><strong>Азон:</strong> 12:35 / <strong>Такбир:</strong> 12:45</p>
+            <p class="text"><strong>Масжид манзили: </strong>Фаргона шахри "Янги чек" масжиди</p>
+        </section>
+        <section>
+            <a href="https://maps.app.goo.gl/pd1W9XDHuah8eEVr9" target="_blank" class="map_button">Масжидни карта оркали очинг</a>
+        </section>
+        <div class="countdown">
+            <div id="days" class="time">00 <span>kun</span></div>
+            <div id="hours" class="time">00 <span>soat</span></div>
+            <div id="minutes" class="time">00 <span>daqiqalar</span></div>
+            <div id="seconds" class="time">00 <span>soniyalar</span></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

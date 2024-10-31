@@ -8,14 +8,14 @@
         .invitation {
             width: 100%;
             margin: 20px auto;
-            padding: 17px;
+            padding: 20px;
             background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
             text-align: center;
             border: 2px solid #ccc;
             max-width: 500px;
-            box-shadow: 0 0 15px aqua;
+            box-shadow: 0 0 40px aqua;
             border-radius: 25px;
-            margin-top: 350px;
+            margin-top: 290px;
         }
         .map_button{
             display: inline-block;
@@ -57,16 +57,81 @@
             padding: 10px 25px;
             border-radius: 20px;
         }
+        .text2 {
+            color: #8a2be2;
+            font-size: 33px;
+        }
         .time span {
             display: block;
             font-size: 0.5em;
         }
+        .text1 {
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            position: absolute;
+            right: 20px;
+            top: 130px;
+        }
+        @media screen and (max-width: 576px) {
+            .invitation {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            text-align: center;
+            border: 2px solid #ccc;
+            max-width: 400px;
+            box-shadow: 0 0 20px aqua;
+            border-radius: 25px;
+            margin-top: 300px;
+        }
+        }
+        @media screen and (max-width: 400px) {
+            .invitation {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            text-align: center;
+            border: 2px solid #ccc;
+            max-width: 330px;
+            box-shadow: 0 0 20px aqua;
+            border-radius: 25px;
+            margin-top: 250px;
+        }
+        .countdown {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            font-size: 1.6em;
+            color: purple;
+            margin-left: -10px;
+        }
+        .time {
+            background: aqua;  
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .text1 {
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            position: absolute;
+            left: 90px;
+            top: 130px;
+        }
+        .text2 {
+            color: #8a2be2;
+            font-size: 30px;
+        }
+    }
     </style>
 </head>
 <body>
     <div class="invitation">
         <header>
-            <h1 class="text">Juma muborak bo'lsin</h1>
+            <h1 class="text2">Juma muborak bo'lsin</h1>
             <p class="text">Assalomu alaykum birodarim sizni Juma ayyomingiz bilan tabriklayman.</p>
         </header>
         <section>
@@ -76,7 +141,6 @@
         </section>
         <section>
             <a href="https://maps.app.goo.gl/pd1W9XDHuah8eEVr9" target="_blank" class="map_button">Масжидни карта оркали очинг</a>
-        </section>
         <div class="countdown">
             <div id="days" class="time">00 <span>kun</span></div>
             <div id="hours" class="time">00 <span>soat</span></div>
@@ -84,6 +148,7 @@
             <div id="seconds" class="time">00 <span>soniyalar</span></div>
         </div>
     </div>
+    <h3 class="text1">Abdulbori Mahamatjanov</h3>
 <script src="script.js"></script>
 </body>
 </html>

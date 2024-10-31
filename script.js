@@ -6,7 +6,7 @@ function updateCountdown() {
 
     if (distance <= 0) {
         clearInterval(interval);
-        document.querySelector('.countdown').innerHTML = "Juma Ayomi muborak bo'lsin!";
+        document.querySelector('.countdown').innerHTML = "Alloh o'qigan nomozlaringizni qabul qilsin";
         return;
     }
 
